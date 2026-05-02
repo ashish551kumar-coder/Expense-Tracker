@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="o.css">
+  <!-- Chart.js CDN add karo -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Header -->
+    <h1>💰 Expense Tracker</h1>
+
+    <!-- Balance Card -->
+    <div class="balance-card">
+      <p>Total Balance</p>
+      <h2 id="balance">₹0</h2>
+    </div>
+
+    <!-- Income / Expense Summary -->
+    <div class="summary">
+      <div class="income">
+        <p>Income</p>
+        <h3 id="total-income">₹0</h3>
+      </div>
+      <div class="expense">
+        <p>Expense</p>
+        <h3 id="total-expense">₹0</h3>
+      </div>
+    </div>
+
+    <!-- Add Transaction Form -->
+    <div class="form-box">
+      <h3>Add Transaction</h3>
+      <input type="text" id="desc" placeholder="Description (e.g. Lunch)">
+      <input type="number" id="amount" placeholder="Amount (e.g. 200)">
+      <div class="radio-group">
+        <label><input type="radio" name="type" value="income" checked> Income</label>
+        <label><input type="radio" name="type" value="expense"> Expense</label>
+      </div>
+      <button id="add-btn">Add Transaction</button>
+    </div>
+
+    <!-- Transaction List -->
+    <!-- Transaction List -->
+    <div class="transaction-box">
+      <h3>Transactions</h3>
+      <ul id="transaction-list"></ul>
+    </div>
+
+    
+    </div>
+  
+  <script src="a.js"></script>
+</body>
+</html>
